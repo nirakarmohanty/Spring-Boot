@@ -1,0 +1,4 @@
+com\nirakar\boot\jdbc\SpringBootDatasourceApplication.class
+com\nirakar\boot\rest\RestBootExample.class
+com\nirakar\boot\jdbc\DatabaseOperations.class
+com\nirakar\boot\jdbc\Student.class
