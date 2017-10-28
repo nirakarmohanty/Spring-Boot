@@ -1,1 +1,0 @@
-insert into employee(id, name) values (3, "mama");
