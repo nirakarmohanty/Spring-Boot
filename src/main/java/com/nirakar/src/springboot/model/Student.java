@@ -1,22 +1,14 @@
 package com.nirakar.src.springboot.model;
 
-import java.util.Date;
-
 import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Student {
 	private int id;
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	private String name;
-
-	public Student() {
-	}
-
-	public Student(String name, String subject) {
-		this.id = (int) (new Date()).getTime();
-		this.name = name;
-		this.subject = subject;
-	}
-
 	private String subject;
 
 	public int getId() {

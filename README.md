@@ -17,3 +17,6 @@ In case you missed, here is the dependency details to be included in the pom.xml
 </dependency>
 
 Url - http://localhost:8182/health
+http://localhost:8182/rest/student/getAll
+http://localhost:8182/rest/student/delete/1
+http://localhost:8182/rest/student/update/1/Naman/medical

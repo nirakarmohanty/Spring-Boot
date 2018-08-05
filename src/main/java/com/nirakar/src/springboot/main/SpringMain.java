@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages={"com.nirakar.src.springboot.restservice"})
 @EnableAutoConfiguration
 @RestController
 @ImportResource("classpath:Spring-application-context.xml")
