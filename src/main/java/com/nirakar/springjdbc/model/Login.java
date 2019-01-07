@@ -2,7 +2,7 @@ package com.nirakar.springjdbc.model;
 
 import java.util.Date;
 
-public class Resident {
+public class Login {
 	public int getId() {
 		return id;
 	}

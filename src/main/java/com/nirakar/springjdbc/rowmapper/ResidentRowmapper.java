@@ -5,13 +5,13 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.nirakar.springjdbc.model.Resident;
+import com.nirakar.springjdbc.model.Login;
 
-public class ResidentRowmapper implements RowMapper<Resident> {
+public class ResidentRowmapper implements RowMapper<Login> {
 
 	@Override
-	public Resident mapRow(ResultSet result, int arg1) throws SQLException {
-		Resident resident = new Resident();
+	public Login mapRow(ResultSet result, int arg1) throws SQLException {
+		Login resident = new Login();
 		resident.setUsername(result.getString("username"));
 		resident.setPassword(result.getString("password"));
 		resident.setDate(result.getDate("date"));

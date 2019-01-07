@@ -1,0 +1,4 @@
+
+Select * from Login
+
+INSERT INTO LOGIN (USERNAME,PASSWORD,DATE) VALUES('naman','naman',CURRENT_TIMESTAMP());
