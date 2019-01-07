@@ -1,7 +1,5 @@
 package com.nirakar.src.spring.bootman.controller;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -48,7 +46,6 @@ public class AuthenticateRestController {
 	@ResponseBody
 	public boolean insertNewUser(@PathVariable String username,
 			@PathVariable String password) {
-		DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 		Date dateobj = new Date();
 		Login login = new Login();
 		login.setUsername(username);
