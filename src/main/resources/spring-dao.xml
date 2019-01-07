@@ -8,4 +8,7 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
+	<bean id="flatDAO" class="com.nirakar.springjdbc.dao.impl.FlatImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
 </beans>
