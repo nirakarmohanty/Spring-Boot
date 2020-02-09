@@ -20,3 +20,13 @@ Url - http://localhost:8182/health
 http://localhost:8182/rest/student/getAll
 http://localhost:8182/rest/student/delete/1
 http://localhost:8182/rest/student/update/1/Naman/medical
+
+Swagger Report 
+
+http://localhost:8182/swagger-ui.html
+
+API Docs 
+
+http://localhost:8182/v2/api-docs 
+
+http://localhost:8182/actuator

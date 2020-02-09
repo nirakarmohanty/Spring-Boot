@@ -1,0 +1,36 @@
+DROP TABLE IF EXISTS EMPLOYEE;
+
+CREATE TABLE EMPLOYEE (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  firstname VARCHAR(250) NOT NULL,
+  lastname VARCHAR(250) NOT NULL,
+  
+);
+
+DROP TABLE IF EXISTS IPLMATCH_DETAIL;
+
+CREATE TABLE IPLMATCH_DETAIL
+(
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  season VARCHAR(250) NOT NULL,
+  city VARCHAR(250) ,
+  date VARCHAR(250) NOT NULL,
+  team1 VARCHAR(250) NOT NULL,
+  team2 VARCHAR(250) NOT NULL,
+  toss_winner VARCHAR(250) NOT NULL,
+  toss_decision VARCHAR(250) NOT NULL,
+  result VARCHAR(250) NOT NULL,
+  dl_applied VARCHAR(250) NOT NULL,
+  winner VARCHAR(250) ,
+  win_by_runs INT  NOT NULL,
+  win_by_wickets INT NOT NULL,
+  player_of_match VARCHAR(250) ,
+  venue VARCHAR(250) NOT NULL,
+  umpire1 VARCHAR(250) NOT NULL,
+  umpire2 VARCHAR(250) NOT NULL,
+  umpire3 VARCHAR(250) ,
+  PRIMARY KEY (ID)
+) 
+AS 
+SELECT * 
+FROM CSVREAD('E:\Study\Spring-Boot\src\main\resources\matches.csv');

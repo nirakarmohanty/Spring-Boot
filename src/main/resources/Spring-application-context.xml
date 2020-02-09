@@ -6,7 +6,17 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
 	<context:component-scan base-package="com.nirakar.src.springboot.restservice.impl" />
 	<context:component-scan base-package="com.nirakar.src.springboot.main" />
+	<context:component-scan base-package="com.nirakar.src.springboot.restservice.util"/>
+	<context:component-scan base-package="com.nirakar.src.springboot.restservice" />
+	<context:component-scan base-package="com.nirakar.src.springboot.iplservice.dao"/>
+	
+	
+	<!-- <context:component-scan base-package="com.nirakar.src.springboot.restservice.util"/>
+	 
+	<context:component-scan base-package="com.nirakar.src.springboot.model" /> -->
+	
 
 </beans>
