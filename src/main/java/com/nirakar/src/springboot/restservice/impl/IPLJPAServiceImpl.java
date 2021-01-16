@@ -26,11 +26,23 @@ public class IPLJPAServiceImpl implements IPLJPAService {
 		return iplJpadao.getAllMatches();
 	}
 
-	
 	@Override
 	@GetMapping(value = "/getMatchDetailById/{id}")
 	public IPLMatchDetail getMatchDetailById(@PathVariable Integer id) {
 		return iplJpadao.getMatchDetailById(id);
+	}
+
+	@Override
+	@GetMapping(value = "/findDLMatchDetail")
+	public List<IPLMatchDetail> findDuckworthLewisMatchDetails() {
+		return iplJpadao.getMatchDetailForDL();
+
+	}
+
+	@Override
+	@GetMapping(value = "/findBySeason/{season}")
+	public List<IPLMatchDetail> findBySeason(@PathVariable String season) {
+		return iplJpadao.findBySeason(season);
 	}
 
 }

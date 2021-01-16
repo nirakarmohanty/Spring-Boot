@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication(scanBasePackages={"com.nirakar.src.springboot.restservice"})
+@SpringBootApplication(scanBasePackages = { "com.nirakar.src.springboot.restservice" })
 @EnableAutoConfiguration
 @RestController
 @ImportResource("classpath:Spring-application-context.xml")
@@ -26,5 +26,5 @@ public class SpringMain {
 	String hello() {
 		return "[Spring Main ]Hello Boot!!!!";
 	}
-	
+
 }

@@ -14,7 +14,7 @@ import com.nirakar.src.springboot.restservice.StudentService;
 
 @RestController
 @SpringBootApplication
-@RequestMapping(value = "/rest/student", method = RequestMethod.GET)
+@RequestMapping(value = "/rest/student")
 class StudentServiceImpl implements StudentService{
 
 	public static Map<Integer, Student> hmStudent = new HashMap<>();

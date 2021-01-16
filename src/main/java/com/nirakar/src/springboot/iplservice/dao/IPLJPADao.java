@@ -11,5 +11,8 @@ public interface IPLJPADao {
 	
 	List<IPLMatchDetail> getAllMatches();
 	IPLMatchDetail getMatchDetailById(int id);
-
+	List<IPLMatchDetail> getMatchDetailForDL();
+	
+	// Customize Query Methods
+	List<IPLMatchDetail> findBySeason(String season);
 }

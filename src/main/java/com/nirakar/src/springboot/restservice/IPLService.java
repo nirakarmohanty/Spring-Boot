@@ -10,8 +10,7 @@ public interface IPLService {
 	IPLMatchDetail getDetailsById(Integer id);
 	List<String> getAllTeamNamesparticipatedInThatYear(String year);
 	Set<String> getCitiesForSeasson(String year);
-	List<String> getAllDetialsForSeasson(String year);
-	
+	List<String> getAllDetialsForSeasson(String year);	
 	//Update Result from Tie To Normal
 	boolean updateResult(Integer id);
 	

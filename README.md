@@ -30,3 +30,8 @@ API Docs
 http://localhost:8182/v2/api-docs 
 
 http://localhost:8182/actuator
+
+H2 Console 
+
+http://localhost:8182/h2-console
+

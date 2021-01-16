@@ -1,5 +1,6 @@
 package com.nirakar.src.springboot.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -21,6 +22,7 @@ import lombok.Setter;
 public class IPLMatchDetail {
 	@Id
 	private int id;
+	@Column(name = "SEASON")
 	private String season;
 	private String city;
 	private String date;

@@ -8,7 +8,10 @@ public interface IPLJPAService {
 
 	List<IPLMatchDetail> getAllMatches();
 
-
 	IPLMatchDetail getMatchDetailById(Integer id);
 
+	List<IPLMatchDetail> findDuckworthLewisMatchDetails();
+	
+	List<IPLMatchDetail> findBySeason(String season);
+	
 }
